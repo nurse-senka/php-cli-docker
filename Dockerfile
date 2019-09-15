@@ -1,4 +1,6 @@
-FROM php:7.3.5-cli-alpine3.9
+FROM php:7.3.9-cli-alpine3.10
+
+ENV COMPOSER_ALLOW_SUPERUSER 1
 
 RUN set -x && \
   apk update && \
